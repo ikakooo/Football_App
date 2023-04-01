@@ -15,6 +15,8 @@
 		AC83303929D883340053A0CE /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC83303729D883340053A0CE /* IntroViewController.xib */; };
 		AC83303D29D884170053A0CE /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83303B29D884170053A0CE /* MatchesViewController.swift */; };
 		AC83303E29D884170053A0CE /* MatchesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC83303C29D884170053A0CE /* MatchesViewController.xib */; };
+		AC83304129D886280053A0CE /* ConfigurableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83304029D886280053A0CE /* ConfigurableButton.swift */; };
+		AC83304429D888100053A0CE /* MainDashboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83304329D888100053A0CE /* MainDashboardTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		AC83303729D883340053A0CE /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
 		AC83303B29D884170053A0CE /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
 		AC83303C29D884170053A0CE /* MatchesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchesViewController.xib; sourceTree = "<group>"; };
+		AC83304029D886280053A0CE /* ConfigurableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableButton.swift; sourceTree = "<group>"; };
+		AC83304329D888100053A0CE /* MainDashboardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 		AC83303129D881B80053A0CE /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				AC83303F29D886140053A0CE /* Custom UI Components */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 		AC83303529D8830F0053A0CE /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				AC83304229D887FD0053A0CE /* MainTabBar */,
 				AC83303A29D884060053A0CE /* Matches */,
 			);
 			path = Dashboard;
@@ -127,6 +133,22 @@
 				AC83303C29D884170053A0CE /* MatchesViewController.xib */,
 			);
 			path = Matches;
+			sourceTree = "<group>";
+		};
+		AC83303F29D886140053A0CE /* Custom UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				AC83304029D886280053A0CE /* ConfigurableButton.swift */,
+			);
+			path = "Custom UI Components";
+			sourceTree = "<group>";
+		};
+		AC83304229D887FD0053A0CE /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				AC83304329D888100053A0CE /* MainDashboardTabBarController.swift */,
+			);
+			path = MainTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +224,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC83301D29D880ED0053A0CE /* AppDelegate.swift in Sources */,
+				AC83304129D886280053A0CE /* ConfigurableButton.swift in Sources */,
 				AC83301F29D880ED0053A0CE /* SceneDelegate.swift in Sources */,
+				AC83304429D888100053A0CE /* MainDashboardTabBarController.swift in Sources */,
 				AC83303D29D884170053A0CE /* MatchesViewController.swift in Sources */,
 				AC83303829D883340053A0CE /* IntroViewController.swift in Sources */,
 			);
