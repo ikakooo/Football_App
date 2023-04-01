@@ -24,6 +24,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let nav = UINavigationController(rootViewController: IntroViewController())
         
         nav.view.tintColor = .white
+        nav.navigationBar.standardAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+
          
         window?.rootViewController = nav
     }
