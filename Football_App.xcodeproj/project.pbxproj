@@ -18,6 +18,22 @@
 		AC83304129D886280053A0CE /* ConfigurableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83304029D886280053A0CE /* ConfigurableButton.swift */; };
 		AC83304429D888100053A0CE /* MainDashboardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83304329D888100053A0CE /* MainDashboardTabBarController.swift */; };
 		AC83304729D890100053A0CE /* NetworkingConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83304629D890100053A0CE /* NetworkingConstans.swift */; };
+		AC83304929D8A6A70053A0CE /* MatchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83304829D8A6A70053A0CE /* MatchesViewModel.swift */; };
+		AC83304B29D8A6CF0053A0CE /* MatchesViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83304A29D8A6CF0053A0CE /* MatchesViewDataSource.swift */; };
+		AC83304D29D8A7530053A0CE /* CellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83304C29D8A7530053A0CE /* CellConfiguration.swift */; };
+		AC83305029D8A9E10053A0CE /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = AC83304F29D8A9E10053A0CE /* Resolver */; };
+		AC83305229D8AA510053A0CE /* MatchesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83305129D8AA510053A0CE /* MatchesRouter.swift */; };
+		AC83305529D8BBD10053A0CE /* Application+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83305429D8BBD10053A0CE /* Application+Injection.swift */; };
+		AC83305729D8BCA40053A0CE /* Matches+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83305629D8BCA40053A0CE /* Matches+Injection.swift */; };
+		AC83305A29D8BE1B0053A0CE /* MatchesServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83305929D8BE1B0053A0CE /* MatchesServices.swift */; };
+		AC83305E29D8C4F30053A0CE /* MatchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83305D29D8C4F30053A0CE /* MatchModel.swift */; };
+		AC83306129D8C5B70053A0CE /* RequestURLGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83306029D8C5B70053A0CE /* RequestURLGenerator.swift */; };
+		AC83306529D8C9D40053A0CE /* MatcheDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83306329D8C9D40053A0CE /* MatcheDayCell.swift */; };
+		AC83306629D8C9D40053A0CE /* MatcheDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC83306429D8C9D40053A0CE /* MatcheDayCell.xib */; };
+		AC83306929D8CA820053A0CE /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83306829D8CA820053A0CE /* UITableView+Extensions.swift */; };
+		AC83306B29D8CAA00053A0CE /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83306A29D8CAA00053A0CE /* UITableViewCell+Extensions.swift */; };
+		AC83306F29D8CF680053A0CE /* TeamsScoresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83306D29D8CF680053A0CE /* TeamsScoresCell.swift */; };
+		AC83307029D8CF680053A0CE /* TeamsScoresCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC83306E29D8CF680053A0CE /* TeamsScoresCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +50,21 @@
 		AC83304029D886280053A0CE /* ConfigurableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableButton.swift; sourceTree = "<group>"; };
 		AC83304329D888100053A0CE /* MainDashboardTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDashboardTabBarController.swift; sourceTree = "<group>"; };
 		AC83304629D890100053A0CE /* NetworkingConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstans.swift; sourceTree = "<group>"; };
+		AC83304829D8A6A70053A0CE /* MatchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewModel.swift; sourceTree = "<group>"; };
+		AC83304A29D8A6CF0053A0CE /* MatchesViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewDataSource.swift; sourceTree = "<group>"; };
+		AC83304C29D8A7530053A0CE /* CellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfiguration.swift; sourceTree = "<group>"; };
+		AC83305129D8AA510053A0CE /* MatchesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesRouter.swift; sourceTree = "<group>"; };
+		AC83305429D8BBD10053A0CE /* Application+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Application+Injection.swift"; sourceTree = "<group>"; };
+		AC83305629D8BCA40053A0CE /* Matches+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Matches+Injection.swift"; sourceTree = "<group>"; };
+		AC83305929D8BE1B0053A0CE /* MatchesServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesServices.swift; sourceTree = "<group>"; };
+		AC83305D29D8C4F30053A0CE /* MatchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchModel.swift; sourceTree = "<group>"; };
+		AC83306029D8C5B70053A0CE /* RequestURLGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestURLGenerator.swift; sourceTree = "<group>"; };
+		AC83306329D8C9D40053A0CE /* MatcheDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatcheDayCell.swift; sourceTree = "<group>"; };
+		AC83306429D8C9D40053A0CE /* MatcheDayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatcheDayCell.xib; sourceTree = "<group>"; };
+		AC83306829D8CA820053A0CE /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		AC83306A29D8CAA00053A0CE /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		AC83306D29D8CF680053A0CE /* TeamsScoresCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsScoresCell.swift; sourceTree = "<group>"; };
+		AC83306E29D8CF680053A0CE /* TeamsScoresCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamsScoresCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC83305029D8A9E10053A0CE /* Resolver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +118,10 @@
 		AC83303129D881B80053A0CE /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				AC83306729D8CA710053A0CE /* Extensions */,
+				AC83305F29D8C56C0053A0CE /* Generators */,
 				AC83303F29D886140053A0CE /* Custom UI Components */,
+				AC83304C29D8A7530053A0CE /* CellConfiguration.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -94,7 +129,10 @@
 		AC83303229D881C30053A0CE /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				AC83305B29D8C4CD0053A0CE /* Domain */,
+				AC83305829D8BDED0053A0CE /* RestAPITasks */,
 				AC83304529D88FFA0053A0CE /* Constants */,
+				AC83305329D8BBB20053A0CE /* DI */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -132,8 +170,13 @@
 		AC83303A29D884060053A0CE /* Matches */ = {
 			isa = PBXGroup;
 			children = (
+				AC83306C29D8CF040053A0CE /* TeamsScoresCell */,
+				AC83306229D8C9AF0053A0CE /* MatcheDayCell */,
 				AC83303B29D884170053A0CE /* MatchesViewController.swift */,
 				AC83303C29D884170053A0CE /* MatchesViewController.xib */,
+				AC83304829D8A6A70053A0CE /* MatchesViewModel.swift */,
+				AC83304A29D8A6CF0053A0CE /* MatchesViewDataSource.swift */,
+				AC83305129D8AA510053A0CE /* MatchesRouter.swift */,
 			);
 			path = Matches;
 			sourceTree = "<group>";
@@ -162,6 +205,74 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		AC83305329D8BBB20053A0CE /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				AC83305429D8BBD10053A0CE /* Application+Injection.swift */,
+				AC83305629D8BCA40053A0CE /* Matches+Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		AC83305829D8BDED0053A0CE /* RestAPITasks */ = {
+			isa = PBXGroup;
+			children = (
+				AC83305929D8BE1B0053A0CE /* MatchesServices.swift */,
+			);
+			path = RestAPITasks;
+			sourceTree = "<group>";
+		};
+		AC83305B29D8C4CD0053A0CE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AC83305C29D8C4D80053A0CE /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AC83305C29D8C4D80053A0CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC83305D29D8C4F30053A0CE /* MatchModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC83305F29D8C56C0053A0CE /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				AC83306029D8C5B70053A0CE /* RequestURLGenerator.swift */,
+			);
+			path = Generators;
+			sourceTree = "<group>";
+		};
+		AC83306229D8C9AF0053A0CE /* MatcheDayCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC83306329D8C9D40053A0CE /* MatcheDayCell.swift */,
+				AC83306429D8C9D40053A0CE /* MatcheDayCell.xib */,
+			);
+			path = MatcheDayCell;
+			sourceTree = "<group>";
+		};
+		AC83306729D8CA710053A0CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC83306829D8CA820053A0CE /* UITableView+Extensions.swift */,
+				AC83306A29D8CAA00053A0CE /* UITableViewCell+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC83306C29D8CF040053A0CE /* TeamsScoresCell */ = {
+			isa = PBXGroup;
+			children = (
+				AC83306D29D8CF680053A0CE /* TeamsScoresCell.swift */,
+				AC83306E29D8CF680053A0CE /* TeamsScoresCell.xib */,
+			);
+			path = TeamsScoresCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,6 +289,9 @@
 			dependencies = (
 			);
 			name = Football_App;
+			packageProductDependencies = (
+				AC83304F29D8A9E10053A0CE /* Resolver */,
+			);
 			productName = Football_App;
 			productReference = AC83301929D880ED0053A0CE /* Football_App.app */;
 			productType = "com.apple.product-type.application";
@@ -206,6 +320,9 @@
 				Base,
 			);
 			mainGroup = AC83301029D880ED0053A0CE;
+			packageReferences = (
+				AC83304E29D8A9E10053A0CE /* XCRemoteSwiftPackageReference "Resolver" */,
+			);
 			productRefGroup = AC83301A29D880ED0053A0CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -223,7 +340,9 @@
 				AC83302929D880EE0053A0CE /* LaunchScreen.storyboard in Resources */,
 				AC83302629D880EE0053A0CE /* Assets.xcassets in Resources */,
 				AC83303E29D884170053A0CE /* MatchesViewController.xib in Resources */,
+				AC83307029D8CF680053A0CE /* TeamsScoresCell.xib in Resources */,
 				AC83303929D883340053A0CE /* IntroViewController.xib in Resources */,
+				AC83306629D8C9D40053A0CE /* MatcheDayCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,13 +353,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC83306529D8C9D40053A0CE /* MatcheDayCell.swift in Sources */,
 				AC83301D29D880ED0053A0CE /* AppDelegate.swift in Sources */,
+				AC83305E29D8C4F30053A0CE /* MatchModel.swift in Sources */,
 				AC83304129D886280053A0CE /* ConfigurableButton.swift in Sources */,
+				AC83304929D8A6A70053A0CE /* MatchesViewModel.swift in Sources */,
 				AC83304729D890100053A0CE /* NetworkingConstans.swift in Sources */,
+				AC83305229D8AA510053A0CE /* MatchesRouter.swift in Sources */,
 				AC83301F29D880ED0053A0CE /* SceneDelegate.swift in Sources */,
+				AC83306129D8C5B70053A0CE /* RequestURLGenerator.swift in Sources */,
+				AC83306F29D8CF680053A0CE /* TeamsScoresCell.swift in Sources */,
+				AC83306B29D8CAA00053A0CE /* UITableViewCell+Extensions.swift in Sources */,
+				AC83306929D8CA820053A0CE /* UITableView+Extensions.swift in Sources */,
 				AC83304429D888100053A0CE /* MainDashboardTabBarController.swift in Sources */,
+				AC83305A29D8BE1B0053A0CE /* MatchesServices.swift in Sources */,
 				AC83303D29D884170053A0CE /* MatchesViewController.swift in Sources */,
+				AC83305529D8BBD10053A0CE /* Application+Injection.swift in Sources */,
 				AC83303829D883340053A0CE /* IntroViewController.swift in Sources */,
+				AC83304D29D8A7530053A0CE /* CellConfiguration.swift in Sources */,
+				AC83304B29D8A6CF0053A0CE /* MatchesViewDataSource.swift in Sources */,
+				AC83305729D8BCA40053A0CE /* Matches+Injection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +580,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC83304E29D8A9E10053A0CE /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC83304F29D8A9E10053A0CE /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC83304E29D8A9E10053A0CE /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC83301129D880ED0053A0CE /* Project object */;
 }

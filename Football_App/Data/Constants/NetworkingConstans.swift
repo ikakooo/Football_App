@@ -7,5 +7,5 @@
 
 //MARK: Rest API
 
-let restBaseUrl = "http://www.mocky.io"
+let restBaseUrl = "https://www.mocky.io"
 let path = "/v2/5b9264193300006b00205fb9"
