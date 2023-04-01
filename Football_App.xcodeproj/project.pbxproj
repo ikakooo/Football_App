@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		AC83301D29D880ED0053A0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83301C29D880ED0053A0CE /* AppDelegate.swift */; };
 		AC83301F29D880ED0053A0CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83301E29D880ED0053A0CE /* SceneDelegate.swift */; };
-		AC83302129D880ED0053A0CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83302029D880ED0053A0CE /* ViewController.swift */; };
-		AC83302429D880ED0053A0CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC83302229D880ED0053A0CE /* Main.storyboard */; };
 		AC83302629D880EE0053A0CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC83302529D880EE0053A0CE /* Assets.xcassets */; };
 		AC83302929D880EE0053A0CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC83302729D880EE0053A0CE /* LaunchScreen.storyboard */; };
+		AC83303829D883340053A0CE /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83303629D883340053A0CE /* IntroViewController.swift */; };
+		AC83303929D883340053A0CE /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC83303729D883340053A0CE /* IntroViewController.xib */; };
+		AC83303D29D884170053A0CE /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83303B29D884170053A0CE /* MatchesViewController.swift */; };
+		AC83303E29D884170053A0CE /* MatchesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC83303C29D884170053A0CE /* MatchesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC83301929D880ED0053A0CE /* Football_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Football_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC83301C29D880ED0053A0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC83301E29D880ED0053A0CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC83302029D880ED0053A0CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC83302329D880ED0053A0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC83302529D880EE0053A0CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC83302829D880EE0053A0CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC83302A29D880EE0053A0CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC83303629D883340053A0CE /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		AC83303729D883340053A0CE /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
+		AC83303B29D884170053A0CE /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
+		AC83303C29D884170053A0CE /* MatchesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,73 @@
 		AC83301B29D880ED0053A0CE /* Football_App */ = {
 			isa = PBXGroup;
 			children = (
-				AC83301C29D880ED0053A0CE /* AppDelegate.swift */,
-				AC83301E29D880ED0053A0CE /* SceneDelegate.swift */,
-				AC83302029D880ED0053A0CE /* ViewController.swift */,
-				AC83302229D880ED0053A0CE /* Main.storyboard */,
-				AC83302529D880EE0053A0CE /* Assets.xcassets */,
-				AC83302729D880EE0053A0CE /* LaunchScreen.storyboard */,
-				AC83302A29D880EE0053A0CE /* Info.plist */,
+				AC83303329D881CC0053A0CE /* App */,
+				AC83303229D881C30053A0CE /* Data */,
+				AC83303129D881B80053A0CE /* Infrastructure */,
+				AC83303029D881AE0053A0CE /* UI */,
 			);
 			path = Football_App;
+			sourceTree = "<group>";
+		};
+		AC83303029D881AE0053A0CE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AC83303529D8830F0053A0CE /* Dashboard */,
+				AC83303429D883020053A0CE /* Intro */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		AC83303129D881B80053A0CE /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		AC83303229D881C30053A0CE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AC83303329D881CC0053A0CE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AC83301C29D880ED0053A0CE /* AppDelegate.swift */,
+				AC83301E29D880ED0053A0CE /* SceneDelegate.swift */,
+				AC83302729D880EE0053A0CE /* LaunchScreen.storyboard */,
+				AC83302529D880EE0053A0CE /* Assets.xcassets */,
+				AC83302A29D880EE0053A0CE /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AC83303429D883020053A0CE /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				AC83303629D883340053A0CE /* IntroViewController.swift */,
+				AC83303729D883340053A0CE /* IntroViewController.xib */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		AC83303529D8830F0053A0CE /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				AC83303A29D884060053A0CE /* Matches */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		AC83303A29D884060053A0CE /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				AC83303B29D884170053A0CE /* MatchesViewController.swift */,
+				AC83303C29D884170053A0CE /* MatchesViewController.xib */,
+			);
+			path = Matches;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +189,8 @@
 			files = (
 				AC83302929D880EE0053A0CE /* LaunchScreen.storyboard in Resources */,
 				AC83302629D880EE0053A0CE /* Assets.xcassets in Resources */,
-				AC83302429D880ED0053A0CE /* Main.storyboard in Resources */,
+				AC83303E29D884170053A0CE /* MatchesViewController.xib in Resources */,
+				AC83303929D883340053A0CE /* IntroViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +201,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC83302129D880ED0053A0CE /* ViewController.swift in Sources */,
 				AC83301D29D880ED0053A0CE /* AppDelegate.swift in Sources */,
 				AC83301F29D880ED0053A0CE /* SceneDelegate.swift in Sources */,
+				AC83303D29D884170053A0CE /* MatchesViewController.swift in Sources */,
+				AC83303829D883340053A0CE /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AC83302229D880ED0053A0CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC83302329D880ED0053A0CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AC83302729D880EE0053A0CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,10 +344,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Football_App/Info.plist;
+				INFOPLIST_FILE = Football_App/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,10 +371,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Football_App/Info.plist;
+				INFOPLIST_FILE = Football_App/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
