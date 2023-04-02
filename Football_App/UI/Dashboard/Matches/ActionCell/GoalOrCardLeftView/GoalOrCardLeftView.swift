@@ -47,6 +47,7 @@ class GoalOrCardLeftView: UIView {
             teamPlayerActionTitleLabel.text = "\(actionTime ?? "0")' Tripping"
             teamPlayerActionImage.image = UIImage(named: "YELLOWCARD")
         case .RED_CARD:
+            teamPlayerActionTitleLabel.textColor = .red
             teamPlayerActionTitleLabel.text = "\(actionTime ?? "0")' Own Goal"
             teamPlayerActionImage.image = UIImage(named: "RedBall")
         default: break

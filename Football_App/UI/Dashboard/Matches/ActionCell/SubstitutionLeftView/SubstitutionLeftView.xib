@@ -1,18 +1,117 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubstitutionLeftView" customModule="Football_App" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="OFE-hB-uVg"/>
+                <outlet property="teamPlayerActionTitleLabel" destination="CvX-bq-dvU" id="jcd-NZ-M56"/>
+                <outlet property="teamPlayerOneImage" destination="B0M-h2-AHB" id="KXX-8N-Uek"/>
+                <outlet property="teamPlayerOneNameLabel" destination="4kd-2f-KiR" id="kQ2-DQ-O56"/>
+                <outlet property="teamPlayerTwoImage" destination="wt9-xD-eVL" id="EvR-ng-sEa"/>
+                <outlet property="teamPlayerTwoNameLabel" destination="0qr-bO-EmP" id="bIR-ga-PEQ"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="180" height="54"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Lu-HO-416">
+                    <rect key="frame" x="163" y="24" width="7" height="6.6666666666666679"/>
+                    <color key="tintColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="7" id="cWQ-5v-1Vg"/>
+                        <constraint firstAttribute="height" constant="7" id="tBP-Dt-hen"/>
+                    </constraints>
+                    <imageReference key="image" image="arrow.up.left" catalog="system" symbolScale="large"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8y9-ce-y4w">
+                    <rect key="frame" x="163" y="42.333333333333329" width="7" height="6.6666666666666714"/>
+                    <color key="tintColor" systemColor="systemRedColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="7" id="qsd-6U-Usw"/>
+                        <constraint firstAttribute="width" constant="7" id="tj4-fW-y2W"/>
+                    </constraints>
+                    <imageReference key="image" image="arrow.down.right" catalog="system" symbolScale="large"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Messi" translatesAutoresizingMaskIntoConstraints="NO" id="wt9-xD-eVL">
+                    <rect key="frame" x="18" y="29" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="ndB-TX-l0B"/>
+                        <constraint firstAttribute="height" constant="25" id="u1p-Mh-w1a"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Messi" translatesAutoresizingMaskIntoConstraints="NO" id="B0M-h2-AHB">
+                    <rect key="frame" x="18" y="14.666666666666664" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="IbW-pE-6bt"/>
+                        <constraint firstAttribute="width" constant="25" id="Uuo-Ep-OsH"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvX-bq-dvU">
+                    <rect key="frame" x="55" y="14.666666666666664" width="103" height="12"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
+                    <color key="textColor" name="TextColorOne"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kd-2f-KiR">
+                    <rect key="frame" x="55" y="26.666666666666671" width="103" height="14"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qr-bO-EmP">
+                    <rect key="frame" x="55" y="40" width="103" height="14"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                    <color key="textColor" name="TextColorOne"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="B0M-h2-AHB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="16H-xD-XBL"/>
+                <constraint firstItem="8y9-ce-y4w" firstAttribute="leading" secondItem="4kd-2f-KiR" secondAttribute="trailing" constant="5" id="2gX-YM-BsL"/>
+                <constraint firstAttribute="trailing" secondItem="3Lu-HO-416" secondAttribute="trailing" constant="10" id="6Nl-J3-Q9w"/>
+                <constraint firstItem="B0M-h2-AHB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="88z-GL-a1Q"/>
+                <constraint firstAttribute="trailing" secondItem="8y9-ce-y4w" secondAttribute="trailing" constant="10" id="CRZ-hY-vco"/>
+                <constraint firstItem="3Lu-HO-416" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="FRi-k1-9CS"/>
+                <constraint firstItem="4kd-2f-KiR" firstAttribute="leading" secondItem="wt9-xD-eVL" secondAttribute="trailing" constant="12" id="GPf-lr-JIS"/>
+                <constraint firstItem="8y9-ce-y4w" firstAttribute="leading" secondItem="0qr-bO-EmP" secondAttribute="trailing" constant="5" id="GQ8-vb-rWT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="wt9-xD-eVL" secondAttribute="bottom" id="MBe-Zd-XMu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="0qr-bO-EmP" secondAttribute="bottom" id="RLK-ir-CMR"/>
+                <constraint firstItem="0qr-bO-EmP" firstAttribute="leading" secondItem="wt9-xD-eVL" secondAttribute="trailing" constant="12" id="W4C-rN-8wU"/>
+                <constraint firstItem="4kd-2f-KiR" firstAttribute="top" secondItem="CvX-bq-dvU" secondAttribute="bottom" id="ZmJ-Mb-NWp"/>
+                <constraint firstItem="CvX-bq-dvU" firstAttribute="top" secondItem="B0M-h2-AHB" secondAttribute="top" id="aWD-rC-ECF"/>
+                <constraint firstItem="3Lu-HO-416" firstAttribute="leading" secondItem="CvX-bq-dvU" secondAttribute="trailing" constant="5" id="cxu-Lk-xQt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8y9-ce-y4w" secondAttribute="bottom" constant="5" id="pzZ-8l-xN9"/>
+                <constraint firstItem="CvX-bq-dvU" firstAttribute="leading" secondItem="B0M-h2-AHB" secondAttribute="trailing" constant="12" id="urE-xy-IwQ"/>
+                <constraint firstItem="wt9-xD-eVL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="wgT-Qh-vGU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="8" y="21"/>
         </view>
     </objects>
+    <resources>
+        <image name="Messi" width="75" height="75"/>
+        <image name="arrow.down.right" catalog="system" width="128" height="112"/>
+        <image name="arrow.up.left" catalog="system" width="128" height="112"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.66666666666666663" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColorOne">
+            <color red="0.69411764705882351" green="0.69411764705882351" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

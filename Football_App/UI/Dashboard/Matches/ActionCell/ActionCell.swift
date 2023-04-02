@@ -10,7 +10,7 @@ import UIKit
 class ActionCell: UITableViewCell {
     @IBOutlet weak var teamLeft: UIView!
     @IBOutlet weak var teamRight: UIView!
-
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,7 +26,7 @@ extension ActionCell: ConfigurableCell {
     func configure(with model: CellModel) {
         guard let model = model as? ViewModel else { return }
         
-        model.summarie?.team1Action?.forEach { action in
+       if let action = model.summarie?.team1Action?.first {
             switch action.actionType {
                 
             case .GOAL, .YELLOW_CARD, .RED_CARD:
@@ -36,14 +36,16 @@ extension ActionCell: ConfigurableCell {
                 goalView.fixInView(teamLeft)
                 
             case .SUBSTITUTION:
-                break
+                let substitutionView = SubstitutionLeftView(frame: .zero)
+                substitutionView.configure(action: action, actionTime: model.summarie?.actionTime)
+                
+                substitutionView.fixInView(teamLeft)
                 
             default: break
             }
         }
         
-        model.summarie?.team2Action?.forEach { action in
-
+        if let action =  model.summarie?.team2Action?.first {
             
             switch action.actionType {
                 
@@ -54,12 +56,16 @@ extension ActionCell: ConfigurableCell {
                 goalView.fixInView(teamRight)
                 
             case .SUBSTITUTION:
-                break
+                
+                let substitutionView = SubstitutionRightView(frame: .zero)
+                substitutionView.configure(action: action, actionTime: model.summarie?.actionTime)
+                
+                substitutionView.fixInView(teamRight)
                 
             default: break
             }
         }
-    
+        
     }
 }
 
