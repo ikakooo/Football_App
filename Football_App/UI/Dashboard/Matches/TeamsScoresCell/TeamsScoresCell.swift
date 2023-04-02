@@ -83,6 +83,6 @@ extension TeamsScoresCell {
             return String(describing: TeamsScoresCell.self)
         }
         
-        var data: MatchModel?
+        var data: ResponceMatchModel?
     }
 }

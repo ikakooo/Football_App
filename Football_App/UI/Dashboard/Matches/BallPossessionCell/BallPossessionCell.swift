@@ -17,6 +17,7 @@ class BallPossessionCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        selectionStyle = .none
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -47,6 +48,6 @@ extension BallPossessionCell {
     struct ViewModel: CellModel {
         var cellIdentifier: String { String(describing: BallPossessionCell.self) }
         
-        var data: MatchModel?
+        var data: ResponceMatchModel?
     }
 }

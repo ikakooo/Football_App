@@ -52,7 +52,7 @@ class MatchesViewModel {
     }
     
     //MARK: - ViewModels
-    private func matchInfoSection(data: MatchModel?)-> SectionModel{
+    private func matchInfoSection(data: ResponceMatchModel?)-> SectionModel{
         SectionModel(
             headerModel: nil,
             cellModels:[MatcheDayCell.ViewModel(data: data),

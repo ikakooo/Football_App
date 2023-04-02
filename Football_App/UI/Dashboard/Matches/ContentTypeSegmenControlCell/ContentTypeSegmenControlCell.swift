@@ -48,6 +48,6 @@ extension ContentTypeSegmenControlCell {
     struct ViewModel: CellModel {
         var cellIdentifier: String { String(describing: ContentTypeSegmenControlCell.self) }
         
-        var data: MatchModel?
+        var data: ResponceMatchModel?
     }
 }

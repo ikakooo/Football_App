@@ -16,7 +16,7 @@ class MatchesServices {
     private var subscriptions = Set<AnyCancellable>()
     
     
-    func getMatchInfo() -> AnyPublisher<MatchModel?, Never>{
+    func getMatchInfo() -> AnyPublisher<ResponceMatchModel?, Never>{
         guard let request = RequestURLGenerator(
             httpMethod: .get,
             baseUrl: restBaseUrl,
@@ -25,7 +25,7 @@ class MatchesServices {
         
      return session.dataTaskPublisher(for: request)
             .tryMap{ (data, response) in
-                var decoded = try? JSONDecoder().decode(MatchModel?.self, from: data )
+                var decoded = try? JSONDecoder().decode(ResponceMatchModel?.self, from: data )
                 decoded?.httpStatusCode = (response as? HTTPURLResponse)?.statusCode
                 
                return decoded

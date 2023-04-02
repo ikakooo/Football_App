@@ -52,6 +52,6 @@ extension MatcheDayCell {
     struct ViewModel: CellModel {
         var cellIdentifier: String { String(describing: MatcheDayCell.self) }
         
-        var data: MatchModel?
+        var data: ResponceMatchModel?
     }
 }
