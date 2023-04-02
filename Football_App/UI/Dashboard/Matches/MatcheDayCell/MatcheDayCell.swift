@@ -33,7 +33,7 @@ extension MatcheDayCell: ConfigurableCell {
         guard let model = model as? ViewModel else { return }
         
         
-        let dateVar = Date.init(timeIntervalSinceNow: TimeInterval(model.data?.match?.matchDate ?? 0)/1000)
+        let dateVar = Date(milliseconds: (model.data?.match?.matchDate ?? 0))
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd-MMMM-yyyy"
         print(dateFormatter.string(from: dateVar))

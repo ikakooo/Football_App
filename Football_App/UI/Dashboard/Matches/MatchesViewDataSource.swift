@@ -22,6 +22,7 @@ class MatchesViewDataSource: NSObject, UITableViewDataSource {
         self.tableView.registerNib(class: MatcheDayCell.self)
         self.tableView.registerNib(class: TeamsScoresCell.self)
         self.tableView.registerNib(class: ContentTypeSegmenControlCell.self)
+        self.tableView.registerNib(class: BallPossessionCell.self)
 
     }
     

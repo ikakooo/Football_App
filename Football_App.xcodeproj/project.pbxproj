@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC35750929D9872C00A73562 /* HorizontalProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC35750829D9872B00A73562 /* HorizontalProgressBar.swift */; };
+		AC35750B29D98B5600A73562 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC35750A29D98B5600A73562 /* Date+Extensions.swift */; };
 		AC463FB929D976740054657B /* Football_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC463FB829D976740054657B /* Football_AppTests.swift */; };
 		AC69379B29D9592300C69B7C /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC69379A29D9592300C69B7C /* UIView+Extensions.swift */; };
 		AC6937A329D9608300C69B7C /* ContentTypeSegmenControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6937A129D9608300C69B7C /* ContentTypeSegmenControlCell.swift */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC35750829D9872B00A73562 /* HorizontalProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalProgressBar.swift; sourceTree = "<group>"; };
+		AC35750A29D98B5600A73562 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		AC463FB629D976740054657B /* Football_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Football_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC463FB829D976740054657B /* Football_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Football_AppTests.swift; sourceTree = "<group>"; };
 		AC69379A29D9592300C69B7C /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -247,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				AC6937A529D960C400C69B7C /* InfoSegmenControl.swift */,
+				AC35750829D9872B00A73562 /* HorizontalProgressBar.swift */,
 			);
 			path = "Custom UI Components";
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 				AC83306829D8CA820053A0CE /* UITableView+Extensions.swift */,
 				AC83306A29D8CAA00053A0CE /* UITableViewCell+Extensions.swift */,
 				AC69379A29D9592300C69B7C /* UIView+Extensions.swift */,
+				AC35750A29D98B5600A73562 /* Date+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -476,6 +482,8 @@
 				AC83304429D888100053A0CE /* MainDashboardTabBarController.swift in Sources */,
 				AC83305A29D8BE1B0053A0CE /* MatchesServices.swift in Sources */,
 				AC83303D29D884170053A0CE /* MatchesViewController.swift in Sources */,
+				AC35750B29D98B5600A73562 /* Date+Extensions.swift in Sources */,
+				AC35750929D9872C00A73562 /* HorizontalProgressBar.swift in Sources */,
 				AC83305529D8BBD10053A0CE /* Application+Injection.swift in Sources */,
 				AC83303829D883340053A0CE /* IntroViewController.swift in Sources */,
 				AC83304D29D8A7530053A0CE /* CellConfiguration.swift in Sources */,

@@ -57,7 +57,8 @@ class MatchesViewModel {
             headerModel: nil,
             cellModels:[MatcheDayCell.ViewModel(data: data),
                         TeamsScoresCell.ViewModel(data: data),
-                        ContentTypeSegmenControlCell.ViewModel(data: data)
+                        ContentTypeSegmenControlCell.ViewModel(data: data),
+                        BallPossessionCell.ViewModel(data: data)
                        ]
         )
     }
