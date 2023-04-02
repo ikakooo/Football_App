@@ -21,6 +21,8 @@ class MatchesViewDataSource: NSObject, UITableViewDataSource {
         self.tableView.separatorColor = .clear
         self.tableView.registerNib(class: MatcheDayCell.self)
         self.tableView.registerNib(class: TeamsScoresCell.self)
+        self.tableView.registerNib(class: ContentTypeSegmenControlCell.self)
+
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

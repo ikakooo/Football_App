@@ -14,6 +14,7 @@ class MatchesViewController: UIViewController {
     
     //MARK: - Outlets
 
+    @IBOutlet weak var tableViewBorderView: UIView!
     @IBOutlet weak var tableView: UITableView!
     
     //MARK: - Variables
@@ -27,7 +28,18 @@ class MatchesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.layer.cornerRadius = 10
+        tableViewBorderView.dropShadow(scale: true)
+        
+//        tableView.layer.cornerRadius = 10
+//        tableView.layer.masksToBounds = false
+//        tableView.layer.shadowColor = UIColor.black.cgColor
+//        tableView.layer.shadowOpacity = 0.5
+//        tableView.layer.shadowOffset = .zero
+//        tableView.layer.shadowRadius = 5
+//        tableView.layer.shadowPath = UIBezierPath(rect: self.view.bounds).cgPath
+//        tableView.layer.shouldRasterize = true
+//        tableView.layer.rasterizationScale = UIScreen.main.scale
+
         
         bindData()
         bindRouter()

@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MatchesViewController" customModule="Football_App" customModuleProvider="target">
             <connections>
                 <outlet property="tableView" destination="4OL-do-JdX" id="Yi1-Ke-g3d"/>
+                <outlet property="tableViewBorderView" destination="UjR-iv-hXf" id="Fae-j9-Dmk"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -28,34 +30,54 @@
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gameweek 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgY-wb-FXF">
                     <rect key="frame" x="0.0" y="59" width="393" height="17"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" name="TextColorOne"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4OL-do-JdX">
-                    <rect key="frame" x="13" y="94" width="367" height="724"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UjR-iv-hXf">
+                    <rect key="frame" x="13" y="94" width="367" height="758"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4OL-do-JdX">
+                            <rect key="frame" x="0.0" y="0.0" width="367" height="758"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </tableView>
+                    </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </tableView>
+                    <constraints>
+                        <constraint firstItem="4OL-do-JdX" firstAttribute="top" secondItem="UjR-iv-hXf" secondAttribute="top" id="DWa-jp-GWn"/>
+                        <constraint firstAttribute="bottom" secondItem="4OL-do-JdX" secondAttribute="bottom" id="Yab-zB-wOJ"/>
+                        <constraint firstItem="4OL-do-JdX" firstAttribute="leading" secondItem="UjR-iv-hXf" secondAttribute="leading" id="fea-r7-YaV"/>
+                        <constraint firstAttribute="trailing" secondItem="4OL-do-JdX" secondAttribute="trailing" id="iVR-VY-rPK"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="TgY-wb-FXF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7X3-jZ-ijJ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4OL-do-JdX" secondAttribute="trailing" constant="13" id="87B-fX-EdL"/>
-                <constraint firstItem="4OL-do-JdX" firstAttribute="top" secondItem="TgY-wb-FXF" secondAttribute="bottom" constant="18" id="Act-cb-gIl"/>
+                <constraint firstAttribute="trailing" secondItem="UjR-iv-hXf" secondAttribute="trailing" constant="13" id="8r9-DZ-vHB"/>
                 <constraint firstItem="TgY-wb-FXF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LFk-TM-VRm"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oge-mq-aev" secondAttribute="trailing" id="P46-Tb-Z54"/>
-                <constraint firstItem="4OL-do-JdX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="13" id="V3Q-F4-ta8"/>
+                <constraint firstAttribute="bottom" secondItem="UjR-iv-hXf" secondAttribute="bottom" id="PS0-AQ-ava"/>
                 <constraint firstItem="oge-mq-aev" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="btj-zF-UOW"/>
                 <constraint firstItem="oge-mq-aev" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gAp-4W-ehf"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4OL-do-JdX" secondAttribute="bottom" id="lKY-iy-Mvg"/>
+                <constraint firstItem="UjR-iv-hXf" firstAttribute="top" secondItem="TgY-wb-FXF" secondAttribute="bottom" constant="18" id="mTr-gx-bXH"/>
+                <constraint firstItem="UjR-iv-hXf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="nKP-BW-FEb"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TgY-wb-FXF" secondAttribute="trailing" id="wba-bs-8ED"/>
             </constraints>
             <point key="canvasLocation" x="46.564885496183201" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
+        <namedColor name="TextColorOne">
+            <color red="0.69411764705882351" green="0.69411764705882351" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

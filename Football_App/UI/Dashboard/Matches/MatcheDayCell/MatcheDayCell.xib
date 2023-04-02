@@ -54,6 +54,10 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="matchDateLabel" destination="67e-r9-7Cw" id="Ox4-Sv-BD5"/>
+                <outlet property="stadiumAdressLabel" destination="bAS-DU-UfI" id="OT7-jd-nnm"/>
+            </connections>
             <point key="canvasLocation" x="112.97709923664122" y="19.366197183098592"/>
         </tableViewCell>
     </objects>
