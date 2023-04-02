@@ -27,7 +27,7 @@ class MatchesViewDataSource: NSObject, UITableViewDataSource, UITableViewDelegat
         self.tableView.registerNib(class: ContentTypeSegmenControlCell.self)
         self.tableView.registerNib(class: BallPossessionCell.self)
         self.tableView.registerNib(class: TimeHeaderCell.self)
-
+        self.tableView.registerNib(class: ActionCell.self)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

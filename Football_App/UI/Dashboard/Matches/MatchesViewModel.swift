@@ -66,17 +66,14 @@ class MatchesViewModel {
     }
 
     private func matchActionsByTimeLineSection(data: ResponceMatchModel?)-> SectionModel{
-        data?.match?.matchSummary?.summaries?.compactMap { summarie in
-            
-          
+      let actionModels  =  data?.match?.matchSummary?.summaries?.compactMap { summarie in
+            ActionCell.ViewModel(summarie: summarie)
     
         }
         
         return   SectionModel(
             headerModel: TimeHeaderCell.ViewModel(),
-            cellModels:[
-                
-            ])
+            cellModels: actionModels ?? [])
     }
     
     

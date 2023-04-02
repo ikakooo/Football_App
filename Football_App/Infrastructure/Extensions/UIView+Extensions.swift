@@ -82,7 +82,7 @@ import UIKit
     func dropShadow(scale: Bool = true) {
         layer.masksToBounds = false
         layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOpacity = 1
+        layer.shadowOpacity = 0.5
         layer.shadowOffset = .zero
         layer.shadowRadius = 5
         layer.shouldRasterize = true

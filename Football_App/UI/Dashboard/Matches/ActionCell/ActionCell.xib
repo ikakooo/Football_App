@@ -10,32 +10,78 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ActionCell" customModule="Football_App" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="54" id="KGk-i7-Jjw" customClass="ActionCell" customModule="Football_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5pH-GX-DjW">
-                        <rect key="frame" x="159.66666666666666" y="0.0" width="0.66666666666665719" height="49"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFE-hs-j2a">
+                        <rect key="frame" x="159.66666666666666" y="0.0" width="0.66666666666665719" height="21"/>
                         <color key="backgroundColor" name="LineColorOne"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="49" id="Jbs-Pq-G0U"/>
-                            <constraint firstAttribute="width" constant="0.5" id="o98-TJ-2gL"/>
+                            <constraint firstAttribute="height" constant="21" id="o9a-Lf-xCh"/>
+                            <constraint firstAttribute="width" constant="0.5" id="wbG-C6-nke"/>
                         </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2VK-rc-xTD">
+                        <rect key="frame" x="156.66666666666666" y="23.666666666666668" width="7" height="7"/>
+                        <color key="backgroundColor" red="0.69019607843137254" green="0.69019607843137254" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="1Ez-6W-7bw"/>
+                            <constraint firstAttribute="width" constant="7" id="pxr-yW-xJW"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0M-mc-jE9">
+                        <rect key="frame" x="159.66666666666666" y="33" width="0.66666666666665719" height="21"/>
+                        <color key="backgroundColor" name="LineColorOne"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="CFq-vG-16F"/>
+                            <constraint firstAttribute="width" constant="0.5" id="Ebv-fe-MrZ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ip5-mX-2Wa">
+                        <rect key="frame" x="163.66666666666663" y="0.0" width="156.33333333333337" height="54"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dnQ-ux-HfY">
+                        <rect key="frame" x="0.0" y="0.0" width="156.66666666666666" height="54"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="5pH-GX-DjW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8bY-PR-OB8"/>
-                    <constraint firstAttribute="bottom" secondItem="5pH-GX-DjW" secondAttribute="bottom" id="Cr9-ko-oSM"/>
-                    <constraint firstItem="5pH-GX-DjW" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="TFZ-gK-g4F"/>
+                    <constraint firstItem="2VK-rc-xTD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3Nm-ZW-ePz"/>
+                    <constraint firstItem="C0M-mc-jE9" firstAttribute="centerX" secondItem="2VK-rc-xTD" secondAttribute="centerX" id="4hA-Ea-Lje"/>
+                    <constraint firstItem="dnQ-ux-HfY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ABn-bE-Ujl"/>
+                    <constraint firstAttribute="bottom" secondItem="dnQ-ux-HfY" secondAttribute="bottom" id="FMt-WZ-1hT"/>
+                    <constraint firstItem="2VK-rc-xTD" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Gdh-cQ-Qpb"/>
+                    <constraint firstItem="Ip5-mX-2Wa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HBb-v6-QKU"/>
+                    <constraint firstAttribute="bottom" secondItem="C0M-mc-jE9" secondAttribute="bottom" id="Olf-Hs-J3J"/>
+                    <constraint firstItem="WFE-hs-j2a" firstAttribute="centerX" secondItem="2VK-rc-xTD" secondAttribute="centerX" id="SGi-q1-9CO"/>
+                    <constraint firstItem="C0M-mc-jE9" firstAttribute="top" secondItem="2VK-rc-xTD" secondAttribute="bottom" constant="2.5" id="a6a-Ri-PyL"/>
+                    <constraint firstItem="2VK-rc-xTD" firstAttribute="top" secondItem="WFE-hs-j2a" secondAttribute="bottom" constant="2.5" id="i1a-Sm-m9e"/>
+                    <constraint firstAttribute="bottom" secondItem="Ip5-mX-2Wa" secondAttribute="bottom" id="iab-qa-Gvj"/>
+                    <constraint firstItem="2VK-rc-xTD" firstAttribute="leading" secondItem="dnQ-ux-HfY" secondAttribute="trailing" id="nYn-uz-9Hv"/>
+                    <constraint firstItem="dnQ-ux-HfY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="q0K-o8-w6h"/>
+                    <constraint firstAttribute="trailing" secondItem="Ip5-mX-2Wa" secondAttribute="trailing" id="vJt-CG-ii9"/>
+                    <constraint firstItem="WFE-hs-j2a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vsH-8b-eZB"/>
+                    <constraint firstItem="Ip5-mX-2Wa" firstAttribute="leading" secondItem="2VK-rc-xTD" secondAttribute="trailing" id="wDX-8p-MeZ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-            <point key="canvasLocation" x="-50.381679389312978" y="19.366197183098592"/>
+            <connections>
+                <outlet property="teamLeft" destination="dnQ-ux-HfY" id="VYK-xZ-xhj"/>
+                <outlet property="teamRight" destination="Ip5-mX-2Wa" id="hRc-hu-oEF"/>
+            </connections>
+            <point key="canvasLocation" x="-50.381679389312978" y="21.126760563380284"/>
         </tableViewCell>
     </objects>
     <resources>
