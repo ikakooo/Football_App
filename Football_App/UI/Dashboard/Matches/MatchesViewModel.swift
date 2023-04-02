@@ -41,9 +41,11 @@ class MatchesViewModel {
                 
                 
                 print(data)
-                if let model = self?.matchInfoSection(data: data) {
-                    self?.sectionsList.append(model)
-                    
+                if let model = self?.matchInfoSection(data: data),
+                   let actionsModel = self?.matchActionsByTimeLineSection(data: data)
+                {
+                    //self?.sectionsList.append(model)
+                    self?.sectionsList.append(contentsOf: [model, actionsModel])
                 }
                 
                
@@ -63,6 +65,19 @@ class MatchesViewModel {
         )
     }
 
+    private func matchActionsByTimeLineSection(data: ResponceMatchModel?)-> SectionModel{
+        data?.match?.matchSummary?.summaries?.compactMap { summarie in
+            
+          
+    
+        }
+        
+        return   SectionModel(
+            headerModel: TimeHeaderCell.ViewModel(),
+            cellModels:[
+                
+            ])
+    }
     
     
     //MARK: - Route To

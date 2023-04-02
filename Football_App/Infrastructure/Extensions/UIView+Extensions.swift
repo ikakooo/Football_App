@@ -84,7 +84,7 @@ import UIKit
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOpacity = 1
         layer.shadowOffset = .zero
-        layer.shadowRadius = 10
+        layer.shadowRadius = 5
         layer.shouldRasterize = true
         layer.rasterizationScale = scale ? UIScreen.main.scale : 1
         layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
