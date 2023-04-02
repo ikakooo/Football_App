@@ -10,13 +10,17 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
+  build-and-test:
+    
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+    - name: Checkout repository
+      uses: actions/checkout@v3
+        
+    - uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: latest-stable
+        
+    - name: Build and test
+      run: xcodebuild clean build test -project Football_App.xcodeproj -scheme "Football_App" -destination 'platform=iOS Simulator,name=iPhone 13' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
