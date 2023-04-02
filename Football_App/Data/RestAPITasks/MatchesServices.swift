@@ -24,12 +24,8 @@ class MatchesServices {
         ).requestURL() else { return Just(nil).eraseToAnyPublisher()}
         
      return session.dataTaskPublisher(for: request)
-            .tryMap{ (data, response) in
-                var decoded = try? JSONDecoder().decode(ResponceMatchModel?.self, from: data )
-                decoded?.httpStatusCode = (response as? HTTPURLResponse)?.statusCode
-                
-               return decoded
-            }
+            .tryMap{$0.data}
+            .decode(type: ResponceMatchModel?.self, decoder: JSONDecoder())
             .replaceError(with: nil)
             .eraseToAnyPublisher()
     }

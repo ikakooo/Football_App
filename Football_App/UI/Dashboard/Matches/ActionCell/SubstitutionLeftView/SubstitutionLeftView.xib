@@ -44,32 +44,32 @@
                     <imageReference key="image" image="arrow.down.right" catalog="system" symbolScale="large"/>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Messi" translatesAutoresizingMaskIntoConstraints="NO" id="wt9-xD-eVL">
-                    <rect key="frame" x="18" y="29" width="25" height="25"/>
+                    <rect key="frame" x="22" y="29" width="25" height="25"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="25" id="ndB-TX-l0B"/>
                         <constraint firstAttribute="height" constant="25" id="u1p-Mh-w1a"/>
                     </constraints>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Messi" translatesAutoresizingMaskIntoConstraints="NO" id="B0M-h2-AHB">
-                    <rect key="frame" x="18" y="14.666666666666664" width="25" height="25"/>
+                    <rect key="frame" x="22" y="14.666666666666664" width="25" height="25"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="25" id="IbW-pE-6bt"/>
                         <constraint firstAttribute="width" constant="25" id="Uuo-Ep-OsH"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvX-bq-dvU">
-                    <rect key="frame" x="55" y="14.666666666666664" width="103" height="12"/>
+                    <rect key="frame" x="59" y="14.666666666666664" width="99" height="12"/>
                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="10"/>
                     <color key="textColor" name="TextColorOne"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4kd-2f-KiR">
-                    <rect key="frame" x="55" y="26.666666666666671" width="103" height="14"/>
+                    <rect key="frame" x="59" y="26.666666666666671" width="99" height="14"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qr-bO-EmP">
-                    <rect key="frame" x="55" y="40" width="103" height="14"/>
+                    <rect key="frame" x="59" y="40" width="99" height="14"/>
                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
                     <color key="textColor" name="TextColorOne"/>
                     <nil key="highlightedColor"/>
@@ -78,7 +78,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="B0M-h2-AHB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="16H-xD-XBL"/>
+                <constraint firstItem="B0M-h2-AHB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="16H-xD-XBL"/>
                 <constraint firstItem="8y9-ce-y4w" firstAttribute="leading" secondItem="4kd-2f-KiR" secondAttribute="trailing" constant="5" id="2gX-YM-BsL"/>
                 <constraint firstAttribute="trailing" secondItem="3Lu-HO-416" secondAttribute="trailing" constant="10" id="6Nl-J3-Q9w"/>
                 <constraint firstItem="B0M-h2-AHB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="88z-GL-a1Q"/>
@@ -94,7 +94,7 @@
                 <constraint firstItem="3Lu-HO-416" firstAttribute="leading" secondItem="CvX-bq-dvU" secondAttribute="trailing" constant="5" id="cxu-Lk-xQt"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8y9-ce-y4w" secondAttribute="bottom" constant="5" id="pzZ-8l-xN9"/>
                 <constraint firstItem="CvX-bq-dvU" firstAttribute="leading" secondItem="B0M-h2-AHB" secondAttribute="trailing" constant="12" id="urE-xy-IwQ"/>
-                <constraint firstItem="wt9-xD-eVL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="wgT-Qh-vGU"/>
+                <constraint firstItem="wt9-xD-eVL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="wgT-Qh-vGU"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="8" y="21"/>
