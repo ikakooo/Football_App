@@ -24,12 +24,7 @@ class MatchesViewModel {
     @Published private var router: MatchesRoute?
     
     func viewDidLoad(){
-        addSections()
         getMatchInfo()
-    }
-    
-    func addSections(){
-         // sectionsList = [ matchInfoSection ]
     }
     
     private func getMatchInfo(){
@@ -37,14 +32,9 @@ class MatchesViewModel {
             .receive(on: DispatchQueue.main)
             .sink(receiveValue: { [weak self] data in
                 
-                
-                
-                
-                print(data)
                 if let model = self?.matchInfoSection(data: data),
                    let actionsModel = self?.matchActionsByTimeLineSection(data: data)
                 {
-                    //self?.sectionsList.append(model)
                     self?.sectionsList.append(contentsOf: [model, actionsModel])
                 }
                 

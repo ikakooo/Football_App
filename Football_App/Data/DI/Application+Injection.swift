@@ -25,9 +25,6 @@ extension Resolver: ResolverRegistering {
     
     
     private static func registerNetworkServices(){
-        register {
-            
-        }
         
         register {
             createURLSession()
