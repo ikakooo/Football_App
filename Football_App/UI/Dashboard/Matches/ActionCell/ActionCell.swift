@@ -11,6 +11,11 @@ class ActionCell: UITableViewCell {
     @IBOutlet weak var teamLeft: UIView!
     @IBOutlet weak var teamRight: UIView!
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        teamLeft = nil
+        teamRight = nil
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -10,7 +10,7 @@ import Kingfisher
 
 class GoalOrCardRightView: UIView {
     
-    @IBOutlet var contentView: UIView!
+    @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var teamPlayerImage: UIImageView!
     @IBOutlet weak var teamPlayerActionImage: UIImageView!
     @IBOutlet weak var teamPlayerActionTitleLabel: UILabel!

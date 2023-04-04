@@ -10,7 +10,7 @@ import Kingfisher
 
 class SubstitutionLeftView: UIView {
     
-    @IBOutlet var contentView: UIView!
+    @IBOutlet weak var contentView: UIView!
     
     @IBOutlet weak var teamPlayerOneImage: UIImageView!
     @IBOutlet weak var teamPlayerTwoImage: UIImageView!

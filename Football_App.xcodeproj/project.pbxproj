@@ -55,6 +55,7 @@
 		AC83306F29D8CF680053A0CE /* TeamsScoresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83306D29D8CF680053A0CE /* TeamsScoresCell.swift */; };
 		AC83307029D8CF680053A0CE /* TeamsScoresCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC83306E29D8CF680053A0CE /* TeamsScoresCell.xib */; };
 		AC83307329D8E4760053A0CE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AC83307229D8E4760053A0CE /* Kingfisher */; };
+		ACC4EE2B29DC333000DA1E73 /* SceneDelegate+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC4EE2A29DC333000DA1E73 /* SceneDelegate+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		AC83306A29D8CAA00053A0CE /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		AC83306D29D8CF680053A0CE /* TeamsScoresCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsScoresCell.swift; sourceTree = "<group>"; };
 		AC83306E29D8CF680053A0CE /* TeamsScoresCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamsScoresCell.xib; sourceTree = "<group>"; };
+		ACC4EE2A29DC333000DA1E73 /* SceneDelegate+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +290,7 @@
 			children = (
 				AC83301C29D880ED0053A0CE /* AppDelegate.swift */,
 				AC83301E29D880ED0053A0CE /* SceneDelegate.swift */,
+				ACC4EE2A29DC333000DA1E73 /* SceneDelegate+Extensions.swift */,
 				AC83302729D880EE0053A0CE /* LaunchScreen.storyboard */,
 				AC83302529D880EE0053A0CE /* Assets.xcassets */,
 				AC83302A29D880EE0053A0CE /* Info.plist */,
@@ -583,6 +586,7 @@
 				AC83303829D883340053A0CE /* IntroViewController.swift in Sources */,
 				AC83304D29D8A7530053A0CE /* CellConfiguration.swift in Sources */,
 				AC35751429D9B43A00A73562 /* ActionCell.swift in Sources */,
+				ACC4EE2B29DC333000DA1E73 /* SceneDelegate+Extensions.swift in Sources */,
 				AC83304B29D8A6CF0053A0CE /* MatchesViewDataSource.swift in Sources */,
 				AC83305729D8BCA40053A0CE /* Matches+Injection.swift in Sources */,
 			);

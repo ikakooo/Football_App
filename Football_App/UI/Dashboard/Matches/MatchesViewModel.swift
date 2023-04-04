@@ -28,6 +28,7 @@ class MatchesViewModel {
     }
     
     private func getMatchInfo(){
+        sectionsList.removeAll()
         matchesServices.getMatchInfo()
             .receive(on: DispatchQueue.main)
             .sink(receiveValue: { [weak self] data in
